@@ -12,3 +12,6 @@ spring:
         format_sql: ture
     database-platform: org.hibernate.dialect.MySQLDialect
     open-in-view: false
+
+server:
+  port: 9090
