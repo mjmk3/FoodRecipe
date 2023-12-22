@@ -18,4 +18,9 @@ public class Recipe implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Long id;
+
+    private String title;
+    private String description;
+    private String image;
+    private String like;
 }
