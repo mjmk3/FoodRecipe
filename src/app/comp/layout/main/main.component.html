@@ -1,1 +1,20 @@
-<p>main works!</p>
+<app-header></app-header>
+<div class="pb-5">
+  <div class="flex justify-center flex-wrap gap-5">
+    <!--@for (item of recipes; track 1) {-->
+    <!--  -->
+    <app-card></app-card>
+    <!--}-->
+    <!--@empty{-->
+    <!--  <div>-->
+    <!--    There is no recipe found-->
+    <!--  </div>-->
+    <!--}-->
+  </div>
+</div>
+<div class="fixed bottom-10 right-10">
+  <button (click)="popUpForm()" mat-fab color="primary">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+<app-footer></app-footer>
