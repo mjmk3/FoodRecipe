@@ -1,6 +1,6 @@
 <div class="flex justify-center h-screen items-center overflow-hidden">
   <div class="container">
-    <div class="cover" [ngClass]="{'route-active':isRegister}" >
+    <div class="cover" [ngClass]="{'rotate-active':isRegister}" >
       <div class="front">
         <img src="https://images.pexels.com/photos/1400172/pexels-photo-1400172.jpeg?auto=compress&cs=tinysrgb&w=600" alt="food Recipe" />
         <div class="text">
@@ -14,6 +14,90 @@
       </div>
       <div class="back">
         <img src="https://images.pexels.com/photos/1391487/pexels-photo-1391487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Recipe" />
+      </div>
+    </div>
+    <div class="form h-full">
+      <div class="form-content h-full">
+        <div class="register-form">
+          <h1 class="text-lg font-bold text-center pb-8">Register Form</h1>
+          <form class="">
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Phone</mat-label>
+                <input matInput
+                       placeholder="Phone ..."
+                       name="phone"
+                       class="py-2 px-3 mt-1 focus:shadow-outline"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Email</mat-label>
+                <input matInput
+                       placeholder="Email ..."
+                       name="email"
+                       class="py-2 px-3 mt-1 focus:shadow-outline"
+                       type="email"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input matInput
+                       placeholder="Password ..."
+                       name="password"
+                       class="py-2 px-3 mt-1 focus:shadow-outline"
+                       type="password"
+                />
+              </mat-form-field>
+            </div>
+
+            <div>
+              <button class="w-full" mat-raised-button color="primary" type="submit">Register</button>
+            </div>
+          </form>
+          <div class="flex items-center gap-9 justify-center mt-2">
+            Already have account !! <button (click)="togglePanel()" mat-button color="primary">Login</button>
+          </div>
+        </div>
+        <div class="login-form">
+          <h1 class="text-lg font-bold text-center pb-8">Login Form</h1>
+          <form class="">
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Phone</mat-label>
+                <input matInput
+                       placeholder="Phone ..."
+                       name="phone"
+                       class="py-2 px-3 mt-1 focus:shadow-outline"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="mb-4">
+              <mat-form-field class="w-full">
+                <mat-label>Password</mat-label>
+                <input matInput
+                       placeholder="Password ..."
+                       name="password"
+                       class="py-2 px-3 mt-1 focus:shadow-outline"
+                       type="password"
+                />
+              </mat-form-field>
+            </div>
+
+            <div>
+              <button class="w-full" mat-raised-button color="primary" type="submit">Login</button>
+            </div>
+          </form>
+          <div class="flex items-center gap-9 justify-center mt-2">
+            New User ? <button (click)="togglePanel()" mat-button color="primary">Register</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
